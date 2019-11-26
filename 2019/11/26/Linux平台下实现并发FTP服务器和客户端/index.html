@@ -8,13 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Linux平台下实现并发FTP服务器和客户端 | Welcome to my blog!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="个人项目">
+  <meta name="description" content="一、基本功能 利用套接字选项 SO_REUSEPORT 实现预分配多进程并发服务器。 采用被动模式传输文件数据。 采用 popen 管道来使得客户端能够支持基本的 Shell 命令（比如 ls，cd，open，close，put，get 等等）。">
+<meta name="keywords" content="个人项目,Linux项目,C语言项目">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux平台下实现并发FTP服务器和客户端">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%B9%B3%E5%8F%B0%E4%B8%8B%E5%AE%9E%E7%8E%B0%E5%B9%B6%E5%8F%91FTP%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%AE%A2%E6%88%B7%E7%AB%AF&#x2F;index.html">
 <meta property="og:site_name" content="Welcome to my blog!">
+<meta property="og:description" content="一、基本功能 利用套接字选项 SO_REUSEPORT 实现预分配多进程并发服务器。 采用被动模式传输文件数据。 采用 popen 管道来使得客户端能够支持基本的 Shell 命令（比如 ls，cd，open，close，put，get 等等）。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-26T09:55:14.684Z">
+<meta property="og:updated_time" content="2019-11-26T12:28:23.392Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Welcome to my blog!" type="application/atom+xml">
@@ -196,7 +198,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="一、基本功能"><a href="#一、基本功能" class="headerlink" title="一、基本功能"></a>一、基本功能</h2><ol>
+<li>利用套接字选项 SO_REUSEPORT 实现预分配多进程并发服务器。</li>
+<li>采用被动模式传输文件数据。</li>
+<li>采用 popen 管道来使得客户端能够支持基本的 Shell 命令（比如 ls，cd，open，close，put，get 等等）。</li>
+</ol>
+
       
 
       
@@ -241,6 +248,14 @@
 			 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">个人项目</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">Linux项目</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">C语言项目</a>
         		</li>
       		
 		</ul>
@@ -346,7 +361,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、基本功能"><span class="toc-number">1.</span> <span class="toc-text">一、基本功能</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -500,6 +515,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">个人项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Java项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">Linux项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">C语言项目</a>
               </li>
              
               <li class="article-tag-list-item">
