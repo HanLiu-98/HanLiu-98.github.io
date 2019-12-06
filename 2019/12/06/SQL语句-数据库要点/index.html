@@ -8,13 +8,20 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>SQL语句&amp;&amp;数据库要点 | Welcome to my blog!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="一、SQL语句（Structured Query Language）1.SQL语句的分类 2.SQL具体语句形式 创建基本表     举例：  CREATE TABLE STU(     SNO    CHAR(6) PRIMARY KEY,     SNAME VARCHAR2(20)  UNIQUE,     SEX  CHAR(3)  DEFAULT(‘男’),     DEPT VARCH">
+<meta name="keywords" content="SQL">
+<meta property="og:type" content="article">
 <meta property="og:title" content="SQL语句&amp;&amp;数据库要点">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;06&#x2F;SQL%E8%AF%AD%E5%8F%A5-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A6%81%E7%82%B9&#x2F;index.html">
 <meta property="og:site_name" content="Welcome to my blog!">
+<meta property="og:description" content="一、SQL语句（Structured Query Language）1.SQL语句的分类 2.SQL具体语句形式 创建基本表     举例：  CREATE TABLE STU(     SNO    CHAR(6) PRIMARY KEY,     SNAME VARCHAR2(20)  UNIQUE,     SEX  CHAR(3)  DEFAULT(‘男’),     DEPT VARCH">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-06T08:44:20.522Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1m9xxtp1.bkt.clouddn.com&#x2F;SQL.PNG">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1m9xxtp1.bkt.clouddn.com&#x2F;SQL1.PNG">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1m9xxtp1.bkt.clouddn.com&#x2F;SQL2.PNG">
+<meta property="og:updated_time" content="2019-12-06T10:05:11.966Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;q1m9xxtp1.bkt.clouddn.com&#x2F;SQL.PNG">
   
     <link rel="alternative" href="/atom.xml" title="Welcome to my blog!" type="application/atom+xml">
   
@@ -195,7 +202,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="一、SQL语句（Structured-Query-Language）"><a href="#一、SQL语句（Structured-Query-Language）" class="headerlink" title="一、SQL语句（Structured Query Language）"></a>一、SQL语句（Structured Query Language）</h2><h3 id="1-SQL语句的分类"><a href="#1-SQL语句的分类" class="headerlink" title="1.SQL语句的分类"></a>1.SQL语句的分类</h3><p><img src="http://q1m9xxtp1.bkt.clouddn.com/SQL.PNG" alt=""></p>
+<h3 id="2-SQL具体语句形式"><a href="#2-SQL具体语句形式" class="headerlink" title="2.SQL具体语句形式"></a>2.SQL具体语句形式</h3><ul>
+<li>创建基本表</li>
+</ul>
+<p><img src="http://q1m9xxtp1.bkt.clouddn.com/SQL1.PNG" alt="">  </p>
+<p>举例：</p>
+<blockquote>
+<p>CREATE TABLE STU<br>(<br>     SNO    CHAR(6) PRIMARY KEY,<br>     SNAME VARCHAR2(20)  UNIQUE,<br>     SEX  CHAR(3)  DEFAULT(‘男’),<br>     DEPT VARCHAR2(20) NOT NULL,<br>     CONSTRAINT  STU_SEX_CONS  CHECK(SEX IN (‘男’,’女’))<br>);        </p>
+</blockquote>
+<hr>
+<blockquote>
+<p>CREATE TABLE CJ<br>(<br>     SNO    CHAR(6),<br>     CNO CHAR(3),<br>     GARDE NUMBER(4,1),<br>     PRIMARY KEY(SNO,CNO),<br>     CONSTRAINT  FK_SNO FOREIGN KEY(SNO) REFERENCES XS(SNO),<br>     CONSTRAINT  FK_CNO FOREIGN KEY(CNO) REFERENCES KC(CNO)<br>);      </p>
+</blockquote>
+<ul>
+<li>修改基本表<br><img src="http://q1m9xxtp1.bkt.clouddn.com/SQL2.PNG" alt=""></li>
+</ul>
+
       
 
       
@@ -234,6 +257,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">SQL</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 	 
 	 
 
@@ -334,7 +368,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、SQL语句（Structured-Query-Language）"><span class="toc-number">1.</span> <span class="toc-text">一、SQL语句（Structured Query Language）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-SQL语句的分类"><span class="toc-number">1.1.</span> <span class="toc-text">1.SQL语句的分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-SQL具体语句形式"><span class="toc-number">1.2.</span> <span class="toc-text">2.SQL具体语句形式</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -499,7 +533,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">-Linux</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -508,6 +542,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">C语言项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">SQL</a>
               </li>
              
               <li class="article-tag-list-item">
